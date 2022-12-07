@@ -50,8 +50,6 @@ int main()
 }
 
 // } Driver Code Ends
-
-
 /*
 Structure of the node of the linked list is as
 struct Node {
@@ -63,7 +61,6 @@ struct Node {
   }
 };
 */
-
 //Function to check whether two linked lists are identical or not. 
 bool areIdentical(struct Node *head1, struct Node *head2)
 {
