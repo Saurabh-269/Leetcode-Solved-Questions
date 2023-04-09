@@ -11,7 +11,47 @@ class Solution
     void sort012(int a[], int n)
     {
         // code here 
-        sort(a,a+n);
+      int temp=0;
+      int count=0;
+      for(int i=0;i<n;i++)
+      {
+          if(a[i]==0)
+          {
+              if(count!=i)
+              {
+                  int temp=a[count];
+                  a[count]=a[i];
+                  a[i]=temp;
+              }
+              count++;
+          }
+      }
+        for(int i=0;i<n;i++)
+      {
+          if(a[i]==1)
+          {
+              if(count!=i)
+              {
+                  int temp=a[count];
+                  a[count]=a[i];
+                  a[i]=temp;
+              }
+              count++;
+          }
+      }
+      for(int i=0;i<n;i++)
+      {
+          if(a[i]==2)
+          {
+              if(count!=i)
+              {
+                  int temp=a[count];
+                  a[count]=a[i];
+                  a[i]=temp;
+              }
+              count++;
+          }
+      }
     }
     
 };
